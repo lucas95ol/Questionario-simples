@@ -1,0 +1,110 @@
+.tudo {
+    padding-right: 20px;
+}
+.esquerda {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 600px;
+    padding: 15px;
+    float: left;
+    background-color: white;
+    background-color: #5ac793;
+    background-image: linear-gradient(45deg, #5ac793 0%, #FFFB7D 100%);
+
+}
+
+.meio {
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 700px;
+    height: 590px;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: white;
+    float: left;
+    margin: 5px;
+    background-color: #29cf9e;
+    background-image: linear-gradient(90deg, #29cf9e 0%, #FC00FF 100%);
+
+}
+.mensagem {
+    border: 3px solid black;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.direita{
+    float: right;
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 600px;
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+}
+
+ .data{
+    height: 100px;
+    background-color: white;
+    height: 200px;
+    border: 3px solid black;
+ }
+table{
+    border-collapse: separate;
+}
+
+tr {
+    vertical-align: inherit;
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.botao1{
+    background-color: #000080;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+}
+
+.botao2{
+    background-color: #000080;
+    color: white;
+    height: 30px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+}
+
+.botao3{
+    background-color: #000080;
+    color: white;
+    height: 30px;
+    width: 200px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+}
+
+.data{
+    margin-top: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.ano{
+    margin-bottom: 10px;
+    border: 2px solid black;
+    width: 190px;
+}

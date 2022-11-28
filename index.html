@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<div>
+    <div class="tudo">
+    <div class="esquerda">
+        <h1>Mensagens</h1>
+        <div class="mensagem" id="mess"></div>
+    </div>
+    <div class="meio">
+        <h1>Questões de História</h1>
+        <table>
+            <tr>Em qual ano se iniciou a segunda guerra mundial?</tr>
+            <tr>
+                <td><button class="botao1" onclick="errado()">1914</button></td>
+                <td><button class="botao1" onclick="errado()">1918</button></td>
+                <td><button class="botao1" onclick="certo()">1939</button></td>
+                <td><button class="botao1" onclick="errado()">1945</button></td>
+            </tr>
+        </table>
+        <br>
+            <table>
+            <tr>Em qual ano acabou a segunda guerra mundial?</tr>
+            <tr>
+                <td><button class="botao1" onclick="certo()">1945</button></td>
+                <td><button class="botao1" onclick="errado()">1946</button></td>
+                <td><button class="botao1" onclick="errado()">1960</button></td>
+                <td><button class="botao1" onclick="errado()">1954</button></td> 
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>Qual foi o grupo vencedor do conflito citado acima?</tr>
+            <tr>
+                <td><button class="botao1" onclick="errado()">Eixo</button></td>
+                <td><button class="botao1" onclick="certo()">Aliados</button></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>Quem era o presidente do Brasil durante a década de 30?</tr>
+            <tr>
+                <td><button class="botao2" onclick="brasilia()">Juscelino Kubitschek</button></td>
+                <td><button class="botao2" onclick="certo()">Getlio Vargas</button></td>
+                <td><button class="botao2" onclick="errado()">Mario Covas</button></td>
+                <td><button class="botao2" onclick="piada()">Luís Inacio Bolsonaro Silva</button></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>Quem venceu a corrida espacial?</tr>
+            <tr>
+                <td><button class="botao1" onclick="certo()">EUA</button></td>
+                <td><button class="botao1" onclick="errado()">URSS</button></td>
+            </tr>
+        </table>
+        <br>
+        <button class="botao3" onclick="end()">terminei</button>
+        <script> 
+        //fazendo funcionar, adicionando javascript, declarando as variaveis, condições e funções
+           var nome = prompt('escreva seu nome');
+            if(nome === 'Lucas'){
+                document.getElementById("mess").innerHTML = "Bem vindo mestre";
+            }else{
+                document.getElementById("mess").innerHTML = "Olá "+nome+", vamos começar?";
+            }   
+             function errado(){
+                document.getElementById("mess").innerHTML = "resposta errada...";
+            }
+            function certo(){
+                document.getElementById("mess").innerHTML = "resposta certa, parabéns";
+            }
+            function brasilia(){
+                document.getElementById("mess").innerHTML = "Não era ele, mas você sabia que ele foi o responsável por tornar Brasilia a capital do Brasil?"
+            }
+            function piada(){
+                document.getElementById("mess").innerHTML = "Se continuar falando assim comigo sabe o que eu te faço!!?? te agarro pela cabeça e te JOOJ";
+            }
+            function end(){
+                document.getElementById("mess").innerHTML = "Muito obrigado por responder "+nome+", não esqueça que o povo no qual não estuda os erros do passado está fadado a repeti-los";
+            }
+        </script>
+    </div>
+    <div class="direita">
+        <h1>Curiosidade</h1>
+        <br>
+            <input type="number" placeholder="Ano que você nasceu" id="cal" class="ano">
+            <br>
+            <button onclick="calcular()" class="botao3">Mostrar Curiosidade</button>
+        <br>
+        <div class="data" id="show">Digite o ano que você nasceu na caixa "ano que você nasceu", e depois clique no botão</div>
+        <script>
+            // essa sessão vai mostrar uma curiosidade, contendo uma função, uma variavel recebida de um imput e condições
+            var show = document.getElementById("show");
+           
+                function calcular(){
+                    var ano = document.getElementById("cal"); //aqui não adiciono .value
+                    var curiosidade = ano.value - 1945; //coloco .value na variavel para acessar o valor recebido pelo imput
+
+                    if(ano.value){ //se receber um valor:
+                        show.innerHTML = 'Depois de '+curiosidade+' anos após a segunda guerra mundial você nasceu'; 
+                    }else{ //se não receber nada:
+                        show.innerHTML = 'Digite um ano válido';
+                    }
+                }
+        </script>     
+    </div>
+</div>
+</div>
+</body>
+</html>
